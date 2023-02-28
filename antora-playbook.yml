@@ -5,6 +5,8 @@ site:
 content:
   sources:
     - url: https://github.com/implicated/docs.git
+      start_paths:
+        - asciidoc
       branches: HEAD
 ui:
   bundle:
