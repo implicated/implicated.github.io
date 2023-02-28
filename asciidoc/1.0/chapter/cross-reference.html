@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cross Reference :: Implicated</title>
+    <meta name="generator" content="Antora 3.1.2">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.demo.com">Implicated</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="asciidoc" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">AsciiDoc Reference</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">AsciiDoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../antora.html">Antora</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Reference</span>
+    <span class="version">Bate</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">AsciiDoc Reference</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">Bate</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">AsciiDoc Reference</a></li>
+    <li><a href="cross-reference.html">Cross Reference</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/implicated/docs/edit/master/asciidoc/modules/ROOT/pages/chapter/cross-reference.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Cross Reference</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Link <code>.adoc</code> file.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">xref:../mac/Keyboard Workflow.adoc[]</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_internal_cross_reference"><a class="anchor" href="#_internal_cross_reference"></a>Internal Cross Reference</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This Shorthand <a href="#_anchor_list">Anchor List</a></p>
+</div>
+<div class="paragraph">
+<p>This Shorthand and rename <a href="#_anchor_link">new_name</a></p>
+</div>
+<div class="paragraph">
+<p>This Inline xref macro <a href="#_anchor_text">New name</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_natural_cross_reference"><a class="anchor" href="#_natural_cross_reference"></a>Natural Cross Reference</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The title must contain at least one space character or contain at least one uppercase letter.</p>
+</div>
+<div class="paragraph">
+<p>This is natural cross reference <a href="#_natural_cross_reference">Natural Cross Reference</a>,</p>
+</div>
+<div class="paragraph">
+<p>This is natural cross reference <a href="#_natural">Natural</a>,</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_document_to_document_cross_reference"><a class="anchor" href="#_document_to_document_cross_reference"></a>Document to Document Cross Reference</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ref to <a href="list.html#_check_list" class="xref page">Check List</a> in <em>List.adoc</em> for more information about <em>check list</em>.</p>
+</div>
+<div class="paragraph">
+<p>See the <a href="list.html#_check_list" class="xref page">README</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customize_prefix_and_suffix"><a class="anchor" href="#_customize_prefix_and_suffix"></a>Customize Prefix and Suffix</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We could also write the link as <a href="List.adoc">README</a>.</p>
+</div>
+<div class="listingblock">
+<div class="title">suffix</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs"> ifdef::env-name[:relfilesuffix: .adoc]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">prefix</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs"> :relfileprefix: ../
+ :relfilesuffix: /</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cross_reference_text_and_style"><a class="anchor" href="#_cross_reference_text_and_style"></a><a href="https://docs.asciidoctor.org/asciidoc/latest/macros/xref-text-and-style/">Cross Reference Text and Style</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="list.html#_check_list" class="xref page">chapter/list.adoc#_check_list</a></p>
+</div>
+<div class="paragraph">
+<p><a href="list.html#_check_list" class="xref page">chapter/list.adoc#_check_list</a></p>
+</div>
+<div class="paragraph">
+<p><a href="list.html#_check_list" class="xref page">chapter/list.adoc#_check_list</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_test_demo"><a class="anchor" href="#_test_demo"></a>Test Demo</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_anchor_list"><a class="anchor" href="#_anchor_list"></a>Anchor List</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is Anchor List.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_anchor_link"><a class="anchor" href="#_anchor_link"></a>Anchor Link</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is Anchor Link.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_anchor_text"><a class="anchor" href="#_anchor_text"></a>Anchor Text [Modify]</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is Anchor Text.
+Ref name not is <strong>Anchor Text [Modify]</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_natural"><a class="anchor" href="#_natural"></a>Natural</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AsciiDoc :: Implicated</title>
+    <meta name="generator" content="Antora 3.1.2">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.demo.com">Implicated</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="asciidoc" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">AsciiDoc Reference</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="index.html">AsciiDoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="antora.html">Antora</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Reference</span>
+    <span class="version">Bate</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">AsciiDoc Reference</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">Bate</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">AsciiDoc Reference</a></li>
+    <li><a href="index.html">AsciiDoc</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/implicated/docs/edit/master/asciidoc/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">AsciiDoc</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Learn Asciidoc</div>
+<ul class="sectlevel0">
+<li><a href="#_block">Block</a></li>
+<li><a href="#_document_header_one_two">Document Header: One : Two</a></li>
+<li><a href="#_document_types">Document Types</a></li>
+<li><a href="#_section">Section</a></li>
+<li><a href="#_paragraphs">Paragraphs</a></li>
+<li><a href="#_discrete_headings">Discrete Headings</a></li>
+<li><a href="#_break">Break</a></li>
+<li><a href="#_text">Text</a></li>
+<li><a href="#_list">List</a></li>
+<li><a href="#_description_list">Description List</a></li>
+<li><a href="#_link">Link</a></li>
+<li><a href="#_cross_reference">Cross Reference</a></li>
+<li><a href="#_footnotes">Footnotes</a></li>
+<li><a href="#_images">Images</a></li>
+<li><a href="#_audio_and_video">Audio and Video</a></li>
+<li><a href="#_icons">Icons</a></li>
+<li><a href="#_keyboard_macro">Keyboard Macro</a></li>
+<li><a href="#_button_and_menu_ui_macro">Button and Menu UI Macro</a></li>
+<li><a href="#_admonitions"><span class="icon"><i class="fa fa-list fa-fw"></i></span> Admonitions</a></li>
+<li><a href="#_sidebars">Sidebars</a></li>
+<li><a href="#_example_blocks">Example Blocks</a></li>
+<li><a href="#_blockquotes">Blockquotes</a></li>
+<li><a href="#_verses">Verses</a></li>
+<li><a href="#_verbatim_and_source_blocks">Verbatim and Source Blocks</a></li>
+<li><a href="#_table">Table</a></li>
+<li><a href="#_equations_and_formulas_stem"><span class="icon"><i class="fa fa-circle fa-fw"></i></span> Equations and Formulas (STEM)</a></li>
+<li><a href="#_toc">TOC</a></li>
+<li><a href="#_docinfo_file">Docinfo File</a></li>
+<li><a href="#_substitutions">Substitutions</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="antora.html" class="xref page">Antora</a>
+<a href="chapter/list.html" class="xref page">List</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>@startmindmap
+* Asciidoc
+** base
+*** title
+*** text
+*** list
+** table
+** toc
+@endmindmap</pre>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_block" class="sect0"><a class="anchor" href="#_block"></a>Block</h1>
+<div class="sect1">
+<h2 id="_delimited_block"><a class="anchor" href="#_delimited_block"></a><a href="https://docs.asciidoctor.org/asciidoc/latest/blocks/delimited/">Delimited Block</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Minimum Delimiter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Command</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>////</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>====</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Listing</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>----</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Literal</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>....</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>--</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sidebar</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>****</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Table</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist none">
+<ul class="none">
+<li>
+<p><code>|===</code></p>
+</li>
+<li>
+<p><code>,===</code></p>
+</li>
+<li>
+<p><code>:===</code></p>
+</li>
+<li>
+<p><code>!===</code></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pass</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>++++</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quote</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>----</code></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nesting_block"><a class="anchor" href="#_nesting_block"></a>Nesting Block</h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This is tip.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This is note.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_document_header_one_two" class="sect0"><a class="anchor" href="#_document_header_one_two"></a>Document Header: One : Two</h1>
+<div class="sect1">
+<h2 id="_reference_the_document_title"><a class="anchor" href="#_reference_the_document_title"></a>Reference the document title</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>AsciiDoc</strong> is this document title</p>
+</div>
+</div>
+</div>
+<h1 id="_document_types" class="sect0"><a class="anchor" href="#_document_types"></a>Document Types</h1>
+<div class="sect1">
+<h2 id="_types"><a class="anchor" href="#_types"></a>Types</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:doctype: manpage</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>article (default)</p>
+</li>
+<li>
+<p>book</p>
+</li>
+<li>
+<p>manpage</p>
+</li>
+<li>
+<p>inline</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h1 id="_section" class="sect0"><a class="anchor" href="#_section"></a>Section</h1>
+<div class="sect1">
+<h2 id="_section_level"><a class="anchor" href="#_section_level"></a><a class="link" href="#_section_level">1. Section Level</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">title</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">= Level 0 Document Title
+
+== Level 1 Section Title
+
+=== Level 2 Section Title
+
+==== Level 3 Section Title
+
+===== Level 4 Section Title
+
+====== Level 5 Section Title
+
+== Another Level 1 Section Title
+
+=== Another Level 2 Section Title
+
+==== Another Level 3 Section Title
+
+===== Another Level 4 Section Title
+
+====== Another Level 5 Section Title</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_activate_section_title_links"><a class="anchor" href="#_activate_section_title_links"></a><a class="link" href="#_activate_section_title_links">2. Activate Section Title Links</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:sectlinks:</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_add_to_section_titles"><a class="anchor" href="#_add_to_section_titles"></a><a class="link" href="#_add_to_section_titles">3. Add § to section titles</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:sectanchors:</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_section_number"><a class="anchor" href="#_section_number"></a><a class="link" href="#_section_number">4. Section Number</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:sectnums:</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_special_section"><a class="anchor" href="#_special_section"></a><a class="link" href="#_special_section">5. <a href="https://docs.asciidoctor.org/asciidoc/latest/sections/styles/">Special Section</a></a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<h1 id="_paragraphs" class="sect0"><a class="anchor" href="#_paragraphs"></a><a class="link" href="#_paragraphs">Paragraphs</a></h1>
+<div class="openblock partintro">
+<div class="content">
+This is the preamble.
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hard_line_breaks"><a class="anchor" href="#_hard_line_breaks"></a><a class="link" href="#_hard_line_breaks">6. Hard Line Breaks</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_inline_line"><a class="anchor" href="#_inline_line"></a><a class="link" href="#_inline_line">6.1. Inline Line</a></h3>
+<div class="paragraph">
+<p>Here&#8217;s a sample AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a<br>
+sample AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a<br>
+sample AsciiDoc document:</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_global"><a class="anchor" href="#_global"></a><a class="link" href="#_global">6.2. Global</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:hardbreaks:</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preamble_and_lead"><a class="anchor" href="#_preamble_and_lead"></a><a class="link" href="#_preamble_and_lead">7. Preamble and Lead</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_preamble"><a class="anchor" href="#_preamble"></a><a class="link" href="#_preamble">7.1. Preamble</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">= 标题
+
+This is the preamble.
+
+== 另一个标题</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lead"><a class="anchor" href="#_lead"></a><a class="link" href="#_lead">7.2. Lead</a></h3>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Here&#8217;s a general AsciiDoc text.</p>
+</div>
+<div class="paragraph lead">
+<p>Here&#8217;s a lead.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_alignment"><a class="anchor" href="#_alignment"></a><a class="link" href="#_alignment">8. Alignment</a></h2>
+<div class="sectionbody">
+<div class="paragraph text-center">
+<p>center text</p>
+</div>
+<div class="paragraph text-left">
+<p>left text</p>
+</div>
+<div class="paragraph text-right">
+<p>right text</p>
+</div>
+</div>
+</div>
+<h1 id="_discrete_headings" class="sect0"><a class="anchor" href="#_discrete_headings"></a><a class="link" href="#_discrete_headings">Discrete Headings</a></h1>
+<div class="sect1">
+<h2 id="_discrete_headings_2"><a class="anchor" href="#_discrete_headings_2"></a><a class="link" href="#_discrete_headings_2">9. Discrete Headings</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">Discrete Headings</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[discrete]
+= title
+
+[discrete]
+== title
+
+[discrete]
+=== title
+
+[discrete]
+===== title</code></pre>
+</div>
+</div>
+<h2 id="_discrete_title" class="discrete">discrete title</h2>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_title"><a class="anchor" href="#_title"></a><a class="link" href="#_title">10. title</a></h2>
+<div class="sectionbody">
+<h2 id="_discrete_title_2" class="discrete">discrete title</h2>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_title_2"><a class="anchor" href="#_title_2"></a><a class="link" href="#_title_2">11. title</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<h1 id="_break" class="sect0"><a class="anchor" href="#_break"></a><a class="link" href="#_break">Break</a></h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Level 1 title self have break.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_line_break"><a class="anchor" href="#_line_break"></a><a class="link" href="#_line_break">12. Line Break</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>hello</p>
+</div>
+<hr>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_page_breakonly_print_mode"><a class="anchor" href="#_page_breakonly_print_mode"></a><a class="link" href="#_page_breakonly_print_mode">13. Page Break(Only Print Mode)</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Page 2</p>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>Page 3</p>
+</div>
+<div class="sect2">
+<h3 id="_forced_break"><a class="anchor" href="#_forced_break"></a><a class="link" href="#_forced_break">13.1. Forced Break</a></h3>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<h1 id="_text" class="sect0"><a class="anchor" href="#_text"></a><a class="link" href="#_text">Text</a></h1>
+<div class="sect1">
+<h2 id="_constrained"><a class="anchor" href="#_constrained"></a><a class="link" href="#_constrained">14. &sect;Constrained</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<div class="title">Bold</div>
+<p>Here&#8217;s a <strong>sample</strong> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">italic</div>
+<p>Here&#8217;s a <em>sample</em> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">highlight</div>
+<p>Here&#8217;s a <mark>sample</mark> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">monospace</div>
+<p>Here&#8217;s a <code>sample</code> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">superscript</div>
+<p>Here&#8217;s a <sup>sample</sup> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">subscript</div>
+<p>Here&#8217;s a <sub>sample</sub> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">quotes-single;;</div>
+<p>Here&#8217;s a <code>'sample'</code> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">quotes-double</div>
+<p>Here&#8217;s a <code>"sample"</code> AsciiDoc document:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_unconstrained"><a class="anchor" href="#_unconstrained"></a><a class="link" href="#_unconstrained">15. Unconstrained</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<div class="title">Bold</div>
+<p>*H*ere&#8217;s a sample AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p><strong>H</strong>ere&#8217;s a sample AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">italic</div>
+<p>Here&#8217;s a #s#ample AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a <mark>s</mark>ample AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<div class="title">Monospace</div>
+<p>Here&#8217;s a `s`ample AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a <code>s</code>ample AsciiDoc document:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mixing"><a class="anchor" href="#_mixing"></a><a class="link" href="#_mixing">16. Mixing</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<div class="title">order: Monospace &gt; other &gt; italic</div>
+<p>Here&#8217;s a <code><strong><em>sample</em></strong></code> AsciiDoc document:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_literal_monospace"><a class="anchor" href="#_literal_monospace"></a><a class="link" href="#_literal_monospace">17. Literal Monospace</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can reference the value of a document attribute using the syntax <code>{name}</code>, where <code>name</code> is the attribute name.</p>
+</div>
+<div class="paragraph">
+<p><code>++</code> is the increment operator in C.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_built_in_role_for_text"><a class="anchor" href="#_built_in_role_for_text"></a><a class="link" href="#_built_in_role_for_text">18. Built-in Role for Text</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here&#8217;s a <span class="big">sample</span> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a <span class="small">sample</span> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a <span class="underline">sample</span> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a <span class="overline">sample</span> AsciiDoc document:</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s a <span class="line-through">sample</span> AsciiDoc document:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quote"><a class="anchor" href="#_quote"></a><a class="link" href="#_quote">19. Quote</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Olaf&#8217;s desk was a mess.</p>
+</div>
+<div class="paragraph">
+<p>Olaf's desk was a mess.</p>
+</div>
+<div class="paragraph">
+<p><code>npm</code>&#8217;s job is to manage the dependencies for your application.</p>
+</div>
+<div class="paragraph">
+<p>A <code>std::vector</code>&#8217;s size is the number of items it contains.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quote_plus"><a class="anchor" href="#_quote_plus"></a><a class="link" href="#_quote_plus">20. Quote Plus</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>"end points"</p>
+</div>
+<div class="paragraph">
+<p>&#8220;end points&#8221;</p>
+</div>
+<div class="paragraph">
+<p>&#8220;`end points`&#8221;</p>
+</div>
+<div class="paragraph">
+<p>&#8220;<code>end points</code>&#8221;</p>
+</div>
+<div class="paragraph">
+<p>"<code>end points</code>" or "<code class="code">end points</code>"</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prevent_substitutions"><a class="anchor" href="#_prevent_substitutions"></a><a class="link" href="#_prevent_substitutions">21. Prevent Substitutions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In /items/{id}, the id attribute isn&#8217;t replaced.<br>
+The curly braces around it are preserved.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stars</strong> isn&#8217;t displayed as bold text.<br>
+The asterisks around it are preserved.</p>
+</div>
+<div class="paragraph">
+<p>&amp;sect; appears as an entity reference.<br>
+It&#8217;s not converted into the section symbol (&sect;).</p>
+</div>
+<div class="paragraph">
+<p>=&gt; The backslash prevents the equals sign followed by a greater than sign from combining to form a double arrow character (&#8658;).</p>
+</div>
+<div class="paragraph">
+<p>[[Word]] is not interpreted as an anchor.<br>
+The double brackets around it are preserved.</p>
+</div>
+<div class="paragraph">
+<p>[[[Word]]] is not interpreted as a bibliography anchor.<br>
+The triple brackets around it are preserved.</p>
+</div>
+<div class="paragraph">
+<p>The URL https://example.org isn&#8217;t converted into an active link.</p>
+</div>
+<div class="paragraph">
+<p>The text __func__ will appear with two underscores in front of it and after it.<br>
+It won&#8217;t be italicized.</p>
+</div>
+</div>
+</div>
+<h1 id="_list" class="sect0"><a class="anchor" href="#_list"></a><a class="link" href="#_list">List</a></h1>
+<div class="sect1">
+<h2 id="_unordered_list"><a class="anchor" href="#_unordered_list"></a><a class="link" href="#_unordered_list">22. Unordered List</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">list 1</div>
+<ul>
+<li>
+<p>one</p>
+<div class="ulist">
+<ul>
+<li>
+<p>one-two</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">list 2</div>
+<ul>
+<li>
+<p>one</p>
+<div class="ulist">
+<ul>
+<li>
+<p>one-two</p>
+<div class="ulist">
+<ul>
+<li>
+<p>one-two-three</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Level 1 list item</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Markers Show</div>
+<ul>
+<li>
+<p>world</p>
+<div class="ulist">
+<ul>
+<li>
+<p>markdown</p>
+<div class="ulist">
+<ul>
+<li>
+<p>svn</p>
+<div class="ulist">
+<ul>
+<li>
+<p>666</p>
+<div class="ulist">
+<ul>
+<li>
+<p>github</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>hello</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>asciidoc</p>
+<div class="ulist disc">
+<ul class="disc">
+<li>
+<p>git</p>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>888</p>
+<div class="ulist bullet">
+<ul class="bullet">
+<li>
+<p>gitlab</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ordered_list"><a class="anchor" href="#_ordered_list"></a><a class="link" href="#_ordered_list">23. Ordered List</a></h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<div class="title">This is list from 3 start</div>
+<ol class="arabic" start="3">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>one-two</p>
+</li>
+<li>
+<p>one-two</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>three</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Markers Show</div>
+<ol class="arabic" start="1]" reversed>
+<li>
+<p>world</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>markdown</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>svn</p>
+<div class="olist upperalpha">
+<ol class="upperalpha" type="A">
+<li>
+<p>666</p>
+<div class="olist upperroman">
+<ol class="upperroman" type="I">
+<li>
+<p>github</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>hello</p>
+<div class="olist none">
+<ol class="none">
+<li>
+<p>asciidoc</p>
+<div class="olist disc">
+<ol class="disc">
+<li>
+<p>git</p>
+<div class="olist circle">
+<ol class="circle">
+<li>
+<p>888</p>
+<div class="olist bullet">
+<ol class="bullet">
+<li>
+<p>gitlab</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_same_list"><a class="anchor" href="#_same_list"></a><a class="link" href="#_same_list">23.1. Same List</a></h3>
+<div class="olist arabic">
+<div class="title">List1</div>
+<ol class="arabic">
+<li>
+<p>Linux</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fedora</p>
+</li>
+<li>
+<p>Ubuntu</p>
+</li>
+<li>
+<p>Slackware</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>BSD</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FreeBSD</p>
+</li>
+<li>
+<p>NetBSD</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Similar List1</div>
+<ol class="arabic">
+<li>
+<p>Linux</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fedora</p>
+</li>
+<li>
+<p>Ubuntu</p>
+</li>
+<li>
+<p>Slackware</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>BSD</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FreeBSD</p>
+</li>
+<li>
+<p>NetBSD</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_list"><a class="anchor" href="#_check_list"></a><a class="link" href="#_check_list">24. Check List</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_interactive"><a class="anchor" href="#_interactive"></a><a class="link" href="#_interactive">24.1. Interactive</a></h3>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><input type="checkbox" data-item-complete="1" checked> Read</p>
+</li>
+<li>
+<p><input type="checkbox" data-item-complete="0"> Write</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_static"><a class="anchor" href="#_static"></a><a class="link" href="#_static">24.2. Static</a></h3>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-check-square-o"></i> Read</p>
+</li>
+<li>
+<p><i class="fa fa-square-o"></i> Write</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_separate_list"><a class="anchor" href="#_separate_list"></a><a class="link" href="#_separate_list">25. Separate List</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_use_line_comment"><a class="anchor" href="#_use_line_comment"></a><a class="link" href="#_use_line_comment">25.1. Use line comment</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>three</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_block_attribute"><a class="anchor" href="#_use_block_attribute"></a><a class="link" href="#_use_block_attribute">25.2. Use block attribute</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>three</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_complex_list"><a class="anchor" href="#_complex_list"></a><a class="link" href="#_complex_list">26. Complex List</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_long_text"><a class="anchor" href="#_long_text"></a><a class="link" href="#_long_text">26.1. Long Text</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The document header in AsciiDoc is optional.<br>
+If present, it must start with a document title.</p>
+</li>
+<li>
+<p>Optional author and revision information lines immediately follow the document title.</p>
+</li>
+<li>
+<p>The document header must be separated from the remainder of the document by one or more empty lines, and it cannot contain empty lines.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_list_continuation"><a class="anchor" href="#_list_continuation"></a><a class="link" href="#_list_continuation">26.2. List Continuation</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>hello asciidoc start</p>
+</li>
+<li>
+<p>this title</p>
+<div class="openblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre>=== two level</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+add a note
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>hello asciidoc end</p>
+</li>
+<li>
+<p></p>
+<div class="listingblock">
+<div class="content">
+<pre>above is empty text list and align(need +)</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist .Ancestor list continuation">
+<ul class=".Ancestor list continuation">
+<li>
+<p>grandmother</p>
+<div class="ulist">
+<ul>
+<li>
+<p>mother</p>
+<div class="ulist">
+<ul>
+<li>
+<p>son</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>grandfather</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>father</p>
+<div class="ulist">
+<ul>
+<li>
+<p>daughter</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>new grandmother</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_description_list" class="sect0"><a class="anchor" href="#_description_list"></a><a class="link" href="#_description_list">Description List</a></h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">description</dt>
+<dd>
+<p>描述</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">nested one</dt>
+<dd>
+<p>嵌套</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">distribute</dt>
+<dd>
+<p>属性</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">nested</dt>
+<dd>
+<p>two</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">dictionary</dt>
+<dd>
+<p>字典</p>
+</dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_available_term_delimiters"><a class="anchor" href="#_the_available_term_delimiters"></a><a class="link" href="#_the_available_term_delimiters">27. The available term delimiters</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The available term delimiters <code>::</code> <code>:::</code> <code>::::</code> <code>;;</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_horizontal_list"><a class="anchor" href="#_horizontal_list"></a><a class="link" href="#_horizontal_list">28. Horizontal List</a></h2>
+<div class="sectionbody">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+CPU
+</td>
+<td class="hdlist2">
+<p>The brain of the computer.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Hard drive
+</td>
+<td class="hdlist2">
+<p>Permanent storage for operating system and/or user files.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+RAM
+</td>
+<td class="hdlist2">
+<p>Temporarily stores information the CPU uses during operation.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_qa_list"><a class="anchor" href="#_qa_list"></a><a class="link" href="#_qa_list">29. QA List</a></h2>
+<div class="sectionbody">
+<div class="qlist qanda">
+<ol>
+<li>
+<p><em>This is question?</em></p>
+<p>This is answer.</p>
+</li>
+<li>
+<p><em>This is question?</em></p>
+<p>This is answer.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<h1 id="_link" class="sect0"><a class="anchor" href="#_link"></a><a class="link" href="#_link">Link</a></h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Link not <code>.adoc</code> file. <code>.adoc</code> file user <a href="chapter/cross-reference.html" class="xref page"><strong>Cross Reference</strong></a></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">link:file://resource/1.txt[name]</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Link hyperlinks.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">link:https://www.google.com[Google]
+
+link:ftp://www.google.com[Google]</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hide_url_schema"><a class="anchor" href="#_hide_url_schema"></a><a class="link" href="#_hide_url_schema">30. Hide URL Schema</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Set <code>hide-uri-scheme</code> attribute in the header of document.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.implicated.cc" class="bare">www.implicated.cc</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_encode"><a class="anchor" href="#_encode"></a><a class="link" href="#_encode">31. Encode</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">open dev tools in browser</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">encodeURI('http://example.org?q=label:"Requires docs"')</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_autolink"><a class="anchor" href="#_autolink"></a><a class="link" href="#_autolink">32. Autolink</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://https.implicated.cc" class="bare">https.implicated.cc</a></p>
+</div>
+<div class="paragraph">
+<p><a href="http://http.implicated.cc" class="bare">http.implicated.cc</a></p>
+</div>
+<div class="paragraph">
+<p><a href="ftp://ftp.implicated.cc" class="bare">ftp.implicated.cc</a></p>
+</div>
+<div class="paragraph">
+<p>mailto:mail@implicated.cc</p>
+</div>
+<div class="sect2">
+<h3 id="_disable_autolink"><a class="anchor" href="#_disable_autolink"></a><a class="link" href="#_disable_autolink">32.1. Disable autolink</a></h3>
+<div class="paragraph">
+<p>Email us at <a href="mailto:hello@example.com">hello@example.com</a> to say hello.</p>
+</div>
+<div class="paragraph">
+<p>Email us at hello@example.com to say hello.</p>
+</div>
+<div class="paragraph">
+<p>Email us at hello@example.com to say hello.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_link_macro"><a class="anchor" href="#_link_macro"></a><a class="link" href="#_link_macro">33. Link Macro</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Type "https://asciidoctor.org" into the location bar of your browser.</p>
+</div>
+<div class="paragraph">
+<p>Type "<a href="https://asciidoctor.org" class="bare">asciidoctor.org</a>" into the location bar of your browser.</p>
+</div>
+<div class="paragraph">
+<p>Open "<a href="https://www.google.com"><strong><em>Google</em></strong></a>" search</p>
+</div>
+<div class="paragraph">
+<p>Open "<a href="https://www.google.com" class="teal"><strong><em>Google</em></strong></a>" search</p>
+</div>
+<div class="paragraph">
+<p><a href="../.crates/iMazing.png" target="_blank" rel="noopener">png</a></p>
+</div>
+<div class="paragraph">
+<p><a href="../.crates/iMazing.png">"This is png^"</a></p>
+</div>
+<div class="paragraph">
+<p><a href="../.crates/iMazing.png" class="btn" target="_blank" rel="noopener">This is png</a></p>
+</div>
+</div>
+</div>
+<h1 id="_cross_reference" class="sect0"><a class="anchor" href="#_cross_reference"></a><a class="link" href="#_cross_reference">Cross Reference</a></h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Link <code>.adoc</code> file.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">xref:../mac/Keyboard Workflow.adoc[]</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_internal_cross_reference"><a class="anchor" href="#_internal_cross_reference"></a><a class="link" href="#_internal_cross_reference">34. Internal Cross Reference</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This Shorthand <a href="#_anchor_list">Chapter 40, <em>Anchor List</em></a></p>
+</div>
+<div class="paragraph">
+<p>This Shorthand and rename <a href="#_anchor_link">new_name</a></p>
+</div>
+<div class="paragraph">
+<p>This Inline xref macro <a href="#_anchor_text">New name</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_natural_cross_reference"><a class="anchor" href="#_natural_cross_reference"></a><a class="link" href="#_natural_cross_reference">35. Natural Cross Reference</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The title must contain at least one space character or contain at least one uppercase letter.</p>
+</div>
+<div class="paragraph">
+<p>This is natural cross reference <a href="#_natural_cross_reference">Chapter 35, <em>Natural Cross Reference</em></a>,</p>
+</div>
+<div class="paragraph">
+<p>This is natural cross reference <a href="#_natural">Chapter 43, <em>Natural</em></a>,</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_document_to_document_cross_reference"><a class="anchor" href="#_document_to_document_cross_reference"></a><a class="link" href="#_document_to_document_cross_reference">36. Document to Document Cross Reference</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ref to <a href="chapter/list.html#_check_list" class="xref page">Check List</a> in <em>List.adoc</em> for more information about <em>check list</em>.</p>
+</div>
+<div class="paragraph">
+<p>See the <a href="chapter/list.html#_check_list" class="xref page">README</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customize_prefix_and_suffix"><a class="anchor" href="#_customize_prefix_and_suffix"></a><a class="link" href="#_customize_prefix_and_suffix">37. Customize Prefix and Suffix</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We could also write the link as <a href="List.adoc">README</a>.</p>
+</div>
+<div class="listingblock">
+<div class="title">suffix</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs"> ifdef::env-name[:relfilesuffix: .adoc]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">prefix</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs"> :relfileprefix: ../
+ :relfilesuffix: /</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cross_reference_text_and_style"><a class="anchor" href="#_cross_reference_text_and_style"></a><a class="link" href="#_cross_reference_text_and_style">38. <a href="https://docs.asciidoctor.org/asciidoc/latest/macros/xref-text-and-style/">Cross Reference Text and Style</a></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="chapter/list.html#_check_list" class="xref page">chapter/list.adoc#_check_list</a></p>
+</div>
+<div class="paragraph">
+<p><a href="chapter/list.html#_check_list" class="xref page">chapter/list.adoc#_check_list</a></p>
+</div>
+<div class="paragraph">
+<p><a href="chapter/list.html#_check_list" class="xref page">chapter/list.adoc#_check_list</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_test_demo"><a class="anchor" href="#_test_demo"></a><a class="link" href="#_test_demo">39. Test Demo</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_anchor_list"><a class="anchor" href="#_anchor_list"></a><a class="link" href="#_anchor_list">40. Anchor List</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is Anchor List.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_anchor_link"><a class="anchor" href="#_anchor_link"></a><a class="link" href="#_anchor_link">41. Anchor Link</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is Anchor Link.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_anchor_text"><a class="anchor" href="#_anchor_text"></a><a class="link" href="#_anchor_text">42. Anchor Text [Modify]</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is Anchor Text.<br>
+Ref name not is <strong>Anchor Text [Modify]</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_natural"><a class="anchor" href="#_natural"></a><a class="link" href="#_natural">43. Natural</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<h1 id="_footnotes" class="sect0"><a class="anchor" href="#_footnotes"></a><a class="link" href="#_footnotes">Footnotes</a></h1>
+<div class="sect1">
+<h2 id="_footnotes_macro_syntax"><a class="anchor" href="#_footnotes_macro_syntax"></a><a class="link" href="#_footnotes_macro_syntax">44. Footnotes Macro Syntax</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The hail-and-rainbow protocol can be initiated at five levels:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>double<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
+</li>
+<li>
+<p>tertiary</p>
+</li>
+<li>
+<p>supernumerary</p>
+</li>
+<li>
+<p>supermassive</p>
+</li>
+<li>
+<p>apocalyptic</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>A bold statement!<sup class="footnote" id="_footnote_disclaimer">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>Another outrageous statement.<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>word<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_externalizing_a_footnotes"><a class="anchor" href="#_externalizing_a_footnotes"></a><a class="link" href="#_externalizing_a_footnotes">45. Externalizing a Footnotes</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A bold statement!<sup class="footnote" id="_footnote_external">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>Another outrageous statement.<sup class="footnote" id="_footnote_external-pass">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_foot"><a class="anchor" href="#_foot"></a><a class="link" href="#_foot">46. Footnotes in Headings<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<h1 id="_images" class="sect0"><a class="anchor" href="#_images"></a><a class="link" href="#_images">Images</a></h1>
+<div class="sect1">
+<h2 id="_block_image_macro"><a class="anchor" href="#_block_image_macro"></a><a class="link" href="#_block_image_macro">47. Block Image Macro</a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="https://docs.asciidoctor.org/asciidoc/latest/macros/_images/sunset.jpg" alt="sunset" width="209" height="105">
+</div>
+<div class="title">Use URL</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/brew_1.png" alt="sunset" width="222">
+</div>
+<div class="title">Use Relative Path</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_inline_image_macro"><a class="anchor" href="#_inline_image_macro"></a><a class="link" href="#_inline_image_macro">48. Inline Image Macro</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click <span class="image"><img src="https://docs.asciidoctor.org/asciidoc/latest/macros/_images/play.png" alt="play"></span> to get the party started.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_images_directory"><a class="anchor" href="#_set_images_directory"></a><a class="link" href="#_set_images_directory">49. Set Images Directory</a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/brew_1.png" alt="sunset" width="222">
+</div>
+<div class="title">User image directory</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_position_and_frame_image"><a class="anchor" href="#_position_and_frame_image"></a><a class="link" href="#_position_and_frame_image">50. <a href="https://docs.asciidoctor.org/asciidoc/latest/macros/image-position/">Position and Frame Image</a></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Text below images.</p>
+</div>
+<div class="imageblock left">
+<div class="content">
+<img src="_images/iMazing.png" alt="A" width="888" height="180">
+</div>
+<div class="title">Image A</div>
+</div>
+<div class="paragraph">
+<p>Text below images.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adjust_image_size"><a class="anchor" href="#_adjust_image_size"></a><a class="link" href="#_adjust_image_size">51. Adjust Image Size</a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="https://docs.asciidoctor.org/asciidoc/latest/macros/_images/sunset.jpg" alt="Sunset" width="222" height="100">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_specify_image_format"><a class="anchor" href="#_specify_image_format"></a><a class="link" href="#_specify_image_format">52. Specify Image Format</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>image::https://example.org/avatar</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://example.org/avatar" alt="avatar">
+</div>
+</div>
+</div>
+</div>
+<h1 id="_audio_and_video" class="sect0"><a class="anchor" href="#_audio_and_video"></a><a class="link" href="#_audio_and_video">Audio and Video</a></h1>
+<div class="sect1">
+<h2 id="_audio"><a class="anchor" href="#_audio"></a><a class="link" href="#_audio">53. Audio</a></h2>
+<div class="sectionbody">
+<div class="audioblock">
+<div class="title">This is audio</div>
+<div class="content">
+<audio src="attachments/爱殇.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_video"><a class="anchor" href="#_video"></a><a class="link" href="#_video">54. Video</a></h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_youtube"><a class="anchor" href="#_youtube"></a><a class="link" href="#_youtube">55. Youtube</a></h2>
+<div class="sectionbody">
+<div class="videoblock">
+<div class="title">出口日语</div>
+<div class="content">
+<iframe src="https://www.youtube.com/embed/wJLu_-bJDAw?rel=0&amp;list=PLynCeSdpMqxBipKl9EHnBzZFzBnGuB108" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="videoblock">
+<div class="title">三体</div>
+<div class="content">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YrLompD6e_k?rel=0&amp;list=PLMX26aiIvX5rFSYPXtcqda3tWd6pGVD5Q&amp;hl=zh-CN" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="videoblock">
+<div class="title">Test</div>
+<div class="content">
+<iframe src="https://www.youtube.com/embed/RvRhUHTV_8k?rel=0&amp;playlist=RvRhUHTV_8k,_SvwdK_HibQ,SGqg_ZzThDU" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_icons" class="sect0"><a class="anchor" href="#_icons"></a><a class="link" href="#_icons">Icons</a></h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="imageblock">
+<div class="content">
+<img src="_images/note.svg" alt="note">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mode"><a class="anchor" href="#_mode"></a><a class="link" href="#_mode">56. Mode</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Mode</th>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Image (Default)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:icons: image</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This <code>Image</code> Icon.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p><span class="icon"><i class="fa fa-shield fa-flip-vertical"></i></span> This <code>Font</code> Icon.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Font (Only <code>HTML</code>, user <a href="https://fontawesome.com/">Font Awesome</a>)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:icons: font</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Icons Macro</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">icon:&lt;target&gt;[&lt;attrlist&gt;]</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>This <code>Icon Macro</code> Icon.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="icon"><i class="fa fa-note fa-note.svg"></i></span> This <code>Image</code> Icon.</p>
+</li>
+<li>
+<p><span class="icon red"><i class="fa fa-heart fa-2x"></i></span> This <code>Font</code> Icon.</p>
+</li>
+<li>
+<p><span class="icon red"><i class="fa fa-heart fa-fa fa-heart"></i></span> This <code>Font</code> Icon.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_icons_macro_attribute"><a class="anchor" href="#_icons_macro_attribute"></a><a class="link" href="#_icons_macro_attribute">57. Icons Macro Attribute</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Mode</th>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Image</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Role</p>
+</li>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p>Link</p>
+</li>
+<li>
+<p>Window</p>
+</li>
+<li>
+<p><strong class="red">Alt</strong></p>
+</li>
+<li>
+<p><strong class="red">Width</strong></p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><span class="icon "><i class="fa fa-note" title="svg"></i></span></p>
+</li>
+<li>
+<p><span class="icon"><a class="image" href="https://www.google.com" target="_blank" rel="noopener"><i class="fa fa-note"></i></a></span></p>
+</li>
+<li>
+<p><span class="icon"><i class="fa fa-note"></i></span></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Font</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Role</p>
+</li>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p>Link</p>
+</li>
+<li>
+<p>Window</p>
+</li>
+<li>
+<p><strong class="red">Size</strong></p>
+</li>
+<li>
+<p>1x (default), 2x, 3x, 4x, 5x, lg, fw</p>
+</li>
+<li>
+<p><strong class="red">Rotate</strong></p>
+</li>
+<li>
+<p><strong class="red">Flip</strong></p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><span class="icon red"><i class="fa fa-tags" title="hello"></i></span></p>
+</li>
+<li>
+<p><span class="icon"><a class="image" href="https://rubygems.org/downloads/whizbang-1.0.0.gem" target="_blank" rel="noopener"><i class="fa fa-download"></i></a></span></p>
+</li>
+<li>
+<p><span class="icon"><i class="fa fa-shield"></i></span></p>
+</li>
+<li>
+<p><span class="icon"><i class="fa fa-shield fa-2x"></i></span></p>
+</li>
+<li>
+<p><span class="icon"><i class="fa fa-shield fa-fw"></i></span></p>
+</li>
+<li>
+<p><span class="icon"><i class="fa fa-shield fa-rotate-90"></i></span></p>
+</li>
+<li>
+<p><span class="icon"><i class="fa fa-shield fa-flip-vertical"></i></span></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-bolt fa-fw"></i></span> bolt</p>
+</div>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-heart fa-fw"></i></span> heart</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<h1 id="_keyboard_macro" class="sect0"><a class="anchor" href="#_keyboard_macro"></a><a class="link" href="#_keyboard_macro">Keyboard Macro</a></h1>
+<div class="sect1">
+<h2 id="_enable_keyboard_macro"><a class="anchor" href="#_enable_keyboard_macro"></a><a class="link" href="#_enable_keyboard_macro">58. Enable Keyboard Macro</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Need set the <code>experimental</code> document attribute.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:experimental:</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_keyboard_macro_2"><a class="anchor" href="#_keyboard_macro_2"></a><a class="link" href="#_keyboard_macro_2">59. Keyboard Macro</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Shortcut</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>A</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This a key</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>⌃</kbd>+<kbd>⇧</kbd>+<kbd>⌘</kbd>+<kbd>⌫</kbd>+<kbd>⌦</kbd>+<kbd>⇪</kbd>+<kbd>⇥</kbd>+<kbd>⎋</kbd>+<kbd>⏎</kbd>+<kbd>⌥</kbd>+<kbd>fn</kbd>+<kbd>↑</kbd>+<kbd>↓</kbd>+<kbd>←</kbd>+<kbd>→</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technical Symbols</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>F11</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle full screen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>T</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open a new tab</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New incognito window</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>\</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to escape characters</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>]</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jump to keyword</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>+</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Increase zoom</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1 id="_button_and_menu_ui_macro" class="sect0"><a class="anchor" href="#_button_and_menu_ui_macro"></a><a class="link" href="#_button_and_menu_ui_macro">Button and Menu UI Macro</a></h1>
+<div class="sect1">
+<h2 id="_button_macro"><a class="anchor" href="#_button_macro"></a><a class="link" href="#_button_macro">60. Button Macro</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Press the <b class="button">OK</b> button when you are finished.</p>
+</div>
+<div class="paragraph">
+<p>Select a file in the file navigator and click <b class="button">Open</b>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_menu_ui_macro"><a class="anchor" href="#_menu_ui_macro"></a><a class="link" href="#_menu_ui_macro">61. Menu UI Macro</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To save the file, select <span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Save</b></span>.</p>
+</div>
+<div class="paragraph">
+<p>Select <span class="menuseq"><b class="menu">View</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Zoom</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Reset</b></span> to reset the zoom level to the default setting.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_shorthand"><a class="anchor" href="#_shorthand"></a><a class="link" href="#_shorthand">62. Shorthand</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Select <span class="menuseq"><b class="menu">File</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">New</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">File</b></span> to create file</p>
+</div>
+<div class="paragraph">
+<p>"File &gt; New &gt; File"</p>
+</div>
+</div>
+</div>
+<h1 id="_admonitions" class="sect0"><a class="anchor" href="#_admonitions"></a><a class="link" href="#_admonitions"><span class="icon"><i class="fa fa-list fa-fw"></i></span> Admonitions</a></h1>
+<div class="sect1">
+<h2 id="_paragraph"><a class="anchor" href="#_paragraph"></a><a class="link" href="#_paragraph">63. Paragraph</a></h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This is note.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+This is tip.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is important.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+This is caution.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+This is warning.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_block_2"><a class="anchor" href="#_block_2"></a><a class="link" href="#_block_2">64. Block</a></h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">important</div>
+<div class="literalblock">
+<div class="content">
+<pre>This is important block.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>This is important block.</p>
+</li>
+<li>
+<p>This is important block.</p>
+</li>
+<li>
+<p>This is important block.</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enable_icons"><a class="anchor" href="#_enable_icons"></a><a class="link" href="#_enable_icons">65. Enable Icons</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:icons: font</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_emoji_for_icons"><a class="anchor" href="#_using_emoji_for_icons"></a><a class="link" href="#_using_emoji_for_icons">66. <a href="https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/">Using Emoji for Icons</a></a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:tip-caption: 💡</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:tip-caption: pass:[&amp;#128161;]</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+It&#8217;s possible to use Unicode glyphs as admonition icons.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+It&#8217;s possible to use Unicode glyphs as admonition icons.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<h1 id="_sidebars" class="sect0"><a class="anchor" href="#_sidebars"></a><a class="link" href="#_sidebars">Sidebars</a></h1>
+<div class="sect1">
+<h2 id="_sidebars_style_syntax"><a class="anchor" href="#_sidebars_style_syntax"></a><a class="link" href="#_sidebars_style_syntax">67. Sidebars Style Syntax</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Text</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+Sidebars are used to visually separate auxiliary bits of content that supplement the main text.
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_delimited_sidebars_syntax"><a class="anchor" href="#_delimited_sidebars_syntax"></a><a class="link" href="#_delimited_sidebars_syntax">68. Delimited Sidebars Syntax</a></h2>
+<div class="sectionbody">
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Optional Title</div>
+<div class="paragraph">
+<p>Sidebars are used to visually separate auxiliary bits of content that supplement the main text.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+They can contain any type of content.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Source code block in a sidebar</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">const { expect, expectCalledWith, heredoc } = require('../test/test-utils')</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_example_blocks" class="sect0"><a class="anchor" href="#_example_blocks"></a><a class="link" href="#_example_blocks">Example Blocks</a></h1>
+<div class="sect1">
+<h2 id="_example_syntax"><a class="anchor" href="#_example_syntax"></a><a class="link" href="#_example_syntax">69. Example Syntax</a></h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="title">Optional title</div>
+<div class="content">
+This is an example of an example block.
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_delimited_example_syntax"><a class="anchor" href="#_delimited_example_syntax"></a><a class="link" href="#_delimited_example_syntax">70. Delimited Example Syntax</a></h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="title">Onomatopoeia</div>
+<div class="content">
+<div class="paragraph">
+<p>The book hit the floor with a <strong>thud</strong>.</p>
+</div>
+<div class="paragraph">
+<p>He could hear doves <strong>cooing</strong> in the pine trees&#8217; branches.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_blockquotes" class="sect0"><a class="anchor" href="#_blockquotes"></a><a class="link" href="#_blockquotes">Blockquotes</a></h1>
+<div class="sect1">
+<h2 id="_base_quote_syntax"><a class="anchor" href="#_base_quote_syntax"></a><a class="link" href="#_base_quote_syntax">71. Base Quote Syntax</a></h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+Quote or excerpt text
+</blockquote>
+<div class="attribution">
+&#8212; attribution<br>
+<cite>citation title and information</cite>
+</div>
+</div>
+<div class="quoteblock">
+<div class="title">After landing the cloaked Klingon bird of prey in Golden Gate park:</div>
+<blockquote>
+Everybody remember where we parked.
+</blockquote>
+<div class="attribution">
+&#8212; Captain James T. Kirk<br>
+<cite>Star Trek IV: The Voyage Home</cite>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_block_quote_syntax"><a class="anchor" href="#_block_quote_syntax"></a><a class="link" href="#_block_quote_syntax">72. Block Quote Syntax</a></h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Dennis: Come and see the violence inherent in the system.<br>
+Help!<br>
+Help!<br>
+I&#8217;m being repressed!</p>
+</div>
+<div class="paragraph">
+<p>King Arthur: Bloody peasant!</p>
+</div>
+<div class="paragraph">
+<p>Dennis: Oh, what a giveaway!<br>
+Did you hear that?<br>
+Did you hear that, eh?<br>
+That&#8217;s what I&#8217;m on about!<br>
+Did you see him repressing me?<br>
+You saw him, Didn&#8217;t you?</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Monty Python and the Holy Grail
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quote_paragraph"><a class="anchor" href="#_quote_paragraph"></a><a class="link" href="#_quote_paragraph">73. Quote paragraph</a></h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+I hold it that a little rebellion now and then is a good thing, and as necessary in the political world as storms in the physical.
+</blockquote>
+<div class="attribution">
+&#8212; Thomas Jefferson<br>
+<cite>Papers of Thomas Jefferson: Volume 11</cite>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_markdown"><a class="anchor" href="#_markdown"></a><a class="link" href="#_markdown">74. Markdown</a></h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Hello world!</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Hello world!</p>
+</div>
+</blockquote>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<h1 id="_verses" class="sect0"><a class="anchor" href="#_verses"></a><a class="link" href="#_verses">Verses</a></h1>
+<div class="sect1">
+<h2 id="_verses_syntaxnot_exists_empty_line"><a class="anchor" href="#_verses_syntaxnot_exists_empty_line"></a><a class="link" href="#_verses_syntaxnot_exists_empty_line">75. Verses Syntax(not exists empty line)</a></h2>
+<div class="sectionbody">
+<div class="verseblock">
+<pre class="content">The fog comes<br>
+on little cat feet.</pre>
+<div class="attribution">
+&#8212; Carl Sandburg<br>
+<cite>two lines from the poem Fog</cite>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_delimited_block_syntax"><a class="anchor" href="#_delimited_block_syntax"></a><a class="link" href="#_delimited_block_syntax">76. Delimited Block Syntax</a></h2>
+<div class="sectionbody">
+<div class="verseblock">
+<pre class="content">The fog comes<br>
+on little cat feet.<br>
+<br>
+It sits looking<br>
+over harbor and city<br>
+on silent haunches<br>
+and then moves on.</pre>
+<div class="attribution">
+&#8212; Carl Sandburg<br>
+<cite>Fog</cite>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_verbatim_and_source_blocks" class="sect0"><a class="anchor" href="#_verbatim_and_source_blocks"></a><a class="link" href="#_verbatim_and_source_blocks">Verbatim and Source Blocks</a></h1>
+<div class="sect1">
+<h2 id="_source"><a class="anchor" href="#_source"></a><a class="link" href="#_source">77. Source</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_block_source"><a class="anchor" href="#_block_source"></a><a class="link" href="#_block_source">77.1. Block Source</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;meta name="viewport"
+  content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is normal content.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_implied_block_source"><a class="anchor" href="#_implied_block_source"></a><a class="link" href="#_implied_block_source">77.2. Implied Block Source</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+"id": 1,
+"name": "hello"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_include_directive"><a class="anchor" href="#_include_directive"></a><a class="link" href="#_include_directive">77.3. Include Directive</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-py hljs" data-lang="py">line = '1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1'
+# print(list(map(int, line.split(','))))
+print(sum(map(int, line.split(','))))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">$ asciidoctor -v</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_source_highlighting"><a class="anchor" href="#_source_highlighting"></a><a class="link" href="#_source_highlighting">78. Source Highlighting</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_enable_global_highlight"><a class="anchor" href="#_enable_global_highlight"></a><a class="link" href="#_enable_global_highlight">78.1. Enable Global Highlight</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:source-language: py</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_listing_block"><a class="anchor" href="#_listing_block"></a><a class="link" href="#_listing_block">78.2. Listing Block</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>User <code>[listing]</code></p>
+<div class="listingblock">
+<div class="content">
+<pre>This is an example of a paragraph assigned the `listing` style in an attribute list.
+Notice that the monospace marks are preserved in the output.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>User Indent</p>
+<div class="literalblock">
+<div class="content">
+<pre>This is an example of a paragraph assigned the `listing` style in an attribute list.
+Notice that the monospace marks are preserved in the output.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>User Delimited <code>----</code></p>
+<div class="listingblock">
+<div class="content">
+<pre>This is an example of a paragraph assigned the `listing` style in an attribute list.
+Notice that the monospace marks are preserved in the output.</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_literal_block"><a class="anchor" href="#_literal_block"></a><a class="link" href="#_literal_block">78.3. Literal Block</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>User <code>[literal]</code></p>
+<div class="literalblock">
+<div class="content">
+<pre>error: 1954 Forbidden search.
+absolutely fatal: operation lost in the dodecahedron of doom.
+Would you like to try again? y/n</pre>
+</div>
+</div>
+</li>
+<li>
+<p>User Indent</p>
+<div class="literalblock">
+<div class="content">
+<pre>error: 1954 Forbidden search
+absolutely fatal: operation lost in the dodecahedron of doom
+Would you like to try again? y/n</pre>
+</div>
+</div>
+</li>
+<li>
+<p>User Delimited <code>....</code></p>
+<div class="literalblock">
+<div class="content">
+<pre>error: 1954 Forbidden search
+absolutely fatal: operation lost in the dodecahedron of doom
+Would you like to try again? y/n</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_verbatim"><a class="anchor" href="#_verbatim"></a><a class="link" href="#_verbatim">79. Verbatim</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-ruby hljs" data-lang="ruby">require 'sinatra' <i class="conum" data-value="1"></i><b>(1)</b>
+
+get '/hi' do <i class="conum" data-value="2"></i><b>(2)</b> <i class="conum" data-value="3"></i><b>(3)</b>
+  "Hello World!"
+end</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Library import</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>URL mapping</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Response block</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<h1 id="_table" class="sect0"><a class="anchor" href="#_table"></a><a class="link" href="#_table">Table</a></h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Operator</th>
+<th class="tableblock halign-left valign-top">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Factor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>&lt;number&gt;</code></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Span</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>+</code> <code>.+</code></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duplication</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>*</code></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Horizontal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>&lt;</code> <code>&gt;</code> <code>^</code></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vertical</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>.&lt;</code> <code>.&gt;</code> <code>^</code></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Style</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>a</code> <code>d</code> <code>e</code> <code>l</code> <code>h</code> <code>m</code> <code>s</code></code></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle">Attribute</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><code><code>cols</code></code></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[cols="&lt;Horizontal&gt;&lt;Vertical&gt;&lt;Width&gt;&lt;Style&gt;"]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[cols="3*&lt;Horizontal&gt;&lt;Vertical&gt;&lt;Style&gt;"]</code></pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><code><code>width</code></code></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><code><code>options</code></code></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<div class="title">Cell Format</div>
+<ul>
+<li>
+<p>&lt;factor&gt;&lt;span or duplication &gt;&lt;horizontal alignment &gt;&lt;vertical alignment &gt;&lt;style &gt;|&lt;cell’s content&gt;</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_base_table"><a class="anchor" href="#_base_table"></a><a class="link" href="#_base_table">80. Base Table</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Name</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_name"><a class="anchor" href="#_table_name"></a><a class="link" href="#_table_name">81. Table Name</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Default format <code>{Table Label}{Table Name}</code>.<br>
+<code>{Table Label}</code> default value is <strong>Table 1.</strong></p>
+</div>
+<div class="sect2">
+<h3 id="_customize_table_label"><a class="anchor" href="#_customize_table_label"></a><a class="link" href="#_customize_table_label">81.1. Customize Table Label</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>All table</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:table-caption: Hello Table Name</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>One table</p>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table caption</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_turn_off_table_label"><a class="anchor" href="#_turn_off_table_label"></a><a class="link" href="#_turn_off_table_label">81.2. Turn Off Table Label</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>All turn off.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:table-caption!:</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Turn off one.</p>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Turn off table label</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_columns"><a class="anchor" href="#_table_columns"></a><a class="link" href="#_table_columns">82. Table Columns</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell3</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_column_width"><a class="anchor" href="#_column_width"></a><a class="link" href="#_column_width">82.1. Column width</a></h3>
+<div class="paragraph">
+<p>Default width is 1.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_align_contents"><a class="anchor" href="#_align_contents"></a><a class="link" href="#_align_contents">82.2. Align Contents</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Symbols</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Horizontal (left right center)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;</code> <code>&gt;</code> <code>^</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vertical (top bottom center)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>.&lt;</code> <code>.&gt;</code> <code>.^</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="exampleblock">
+<div class="title"></div>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6669%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Default (Left-Top)</th>
+<th class="tableblock halign-left valign-top">Ref</th>
+<th class="tableblock halign-left valign-top">Left-Top</th>
+<th class="tableblock halign-right valign-bottom">Right-Bottom</th>
+<th class="tableblock halign-center valign-middle">Center-Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">default</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">There isn&#8217;t a horizontal alignment operator on this column&#8217;s specifier, so the column falls back to the default horizontal alignment.<br>
+Content is left-aligned by default.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test</p></td>
+<td class="tableblock halign-right valign-bottom"><p class="tableblock">Test</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Test</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_style"><a class="anchor" href="#_style"></a><a class="link" href="#_style">82.3. <a href="https://docs.asciidoctor.org/asciidoc/latest/tables/format-column-content">Style</a></a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">d</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Emphasis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">h</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Literal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">l</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Monospace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strong</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Asciidoc</th>
+<th class="tableblock halign-left valign-top">Default</th>
+<th class="tableblock halign-left valign-top">Emphasis</th>
+<th class="tableblock halign-left valign-top">Header</th>
+<th class="tableblock halign-left valign-top">Literal</th>
+<th class="tableblock halign-left valign-top">Monospace</th>
+<th class="tableblock halign-left valign-top">Strong</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>List 1</p>
+</li>
+<li>
+<p>List 2</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This column&#8217;s content is default (<code>d</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This column&#8217;s content is italicized (<code>e</code>).</em></p></td>
+<th class="tableblock halign-left valign-top"><p class="tableblock">This column&#8217;s content and borders are rendered using the table header (<code>h</code>) styles.</p></th>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>`&gt;`</pre></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>This column&#8217;s content is rendered using a monospace font (m).</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>This column&#8217;s content is bold (<code>s</code>).</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import os
+print "%s" %(os.uname())</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em><code>&gt;</code></em></p></td>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><code>&gt;</code></p></th>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>`&gt;`</pre></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>&gt;</code></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code>&gt;</code></strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_rows"><a class="anchor" href="#_table_rows"></a><a class="link" href="#_table_rows">83. Table Rows</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_header_row"><a class="anchor" href="#_header_row"></a><a class="link" href="#_header_row">83.1. Header Row</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Explicit</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Shorthand</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Formal</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Implicit</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Deactivate</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_footer_row"><a class="anchor" href="#_footer_row"></a><a class="link" href="#_footer_row">83.2. Footer Row</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Shorthand</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header2</p></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tfoot>
+</table>
+</li>
+<li>
+<p>Formal</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header2</p></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tfoot>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_align_content"><a class="anchor" href="#_align_content"></a><a class="link" href="#_align_content">83.3. Align Content</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Example</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Default (Left-Top)</th>
+<th class="tableblock halign-left valign-top">Ref</th>
+<th class="tableblock halign-left valign-top">Left-Top</th>
+<th class="tableblock halign-left valign-top">Right-Bottom</th>
+<th class="tableblock halign-left valign-top">Center-Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">There isn&#8217;t a horizontal alignment operator on this column&#8217;s specifier, so the column falls back to the default horizontal alignment.<br>
+Content is left-aligned by default.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Test</p></td>
+<td class="tableblock halign-right valign-bottom"><p class="tableblock">Test</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Test</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default</p></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">There isn&#8217;t a horizontal alignment operator on this column&#8217;s specifier, so the column falls back to the default horizontal alignment.<br>
+Content is left-aligned by default.</p></td>
+<td class="tableblock halign-right valign-bottom"><p class="tableblock">Test</p></td>
+<td class="tableblock halign-right valign-bottom"><p class="tableblock">Test</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_style_2"><a class="anchor" href="#_style_2"></a><a class="link" href="#_style_2">83.4. Style</a></h3>
+<div class="paragraph">
+<p><strong>Override the column style.</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Asciidoc</th>
+<th class="tableblock halign-left valign-top">Default</th>
+<th class="tableblock halign-left valign-top">Emphasis</th>
+<th class="tableblock halign-left valign-top">Header</th>
+<th class="tableblock halign-left valign-top">Literal</th>
+<th class="tableblock halign-left valign-top">Monospace</th>
+<th class="tableblock halign-left valign-top">Strong</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>List 1</p>
+</li>
+<li>
+<p>List 2</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This column&#8217;s content is default (<code>d</code>).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>This column&#8217;s content is italicized (<code>e</code>).</em></p></td>
+<th class="tableblock halign-left valign-top"><p class="tableblock">This column&#8217;s content and borders are rendered using the table header (<code>h</code>) styles.</p></th>
+<td class="tableblock halign-left valign-top"><div class="literal"><pre>`&gt;`</pre></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>This column&#8217;s content is rendered using a monospace font (<code>m</code>).</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>This column&#8217;s content is bold (<code>s</code>).</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import os
+print "%s" %(os.uname())</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>&gt;</code></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>&gt;</code></code></p></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock"><code><code>&gt;</code></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><code>&gt;</code></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code>&gt;</code></strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_duplicate_cells"><a class="anchor" href="#_duplicate_cells"></a><a class="link" href="#_duplicate_cells">83.5. Duplicate Cells</a></h3>
+<div class="paragraph">
+<div class="title">Format</div>
+<p>&lt;duplication factor&gt;&lt;duplication operator&gt;&lt;horizontal alignment operator&gt;&lt;vertical alignment operator&gt;&lt;style operator&gt;|&lt;cell’s content&gt;</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1 <code>&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1 <code>&gt;</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Cell2 <code>&gt;</code></em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Cell2 <code>&gt;</code></em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_span"><a class="anchor" href="#_table_span"></a><a class="link" href="#_table_span">84. Table Span</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<div class="title">Format</div>
+<p><code>&lt;Columns Span&gt;&lt;Rows Span&gt;+</code></p>
+</div>
+<div class="sect2">
+<h3 id="_span_columns"><a class="anchor" href="#_span_columns"></a><a class="link" href="#_span_columns">84.1. Span Columns</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Cell3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_span_rows"><a class="anchor" href="#_span_rows"></a><a class="link" href="#_span_rows">84.2. Span Rows</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Cell2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_span_columns_and_rows"><a class="anchor" href="#_span_columns_and_rows"></a><a class="link" href="#_span_columns_and_rows">84.3. Span Columns and Rows</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+<th class="tableblock halign-left valign-top">Header3</th>
+<th class="tableblock halign-left valign-top">Header4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1</p></td>
+<td class="tableblock halign-left valign-top" colspan="2" rowspan="2"><p class="tableblock">Cell2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_width"><a class="anchor" href="#_table_width"></a><a class="link" href="#_table_width">85. Table Width</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Default</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all" style="width: 10%;">
+<caption class="title">Table 5. Fixed</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all fit-content">
+<caption class="title">Table 6. auto width</caption>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Header1</th>
+<th class="tableblock halign-left valign-top">Header2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell2</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. Mix</caption>
+<colgroup>
+<col style="width: 25%;">
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">small</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">as big as the column needs to be</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the rest</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_borders"><a class="anchor" href="#_table_borders"></a><a class="link" href="#_table_borders">86. Table Borders</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Frame</th>
+<th class="tableblock halign-left valign-top">Grid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">all (Default)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">all (Default)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ends (Top and Bottom)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rows</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sides (Left and Right)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cols</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
+</tr>
+</tbody>
+</table>
+<div class="exampleblock">
+<div class="title">Example</div>
+<div class="content">
+<table class="tableblock frame-all grid-none stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HeaderCell1</th>
+<th class="tableblock halign-left valign-top">Header Cell 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_striping"><a class="anchor" href="#_table_striping"></a><a class="link" href="#_table_striping">87. Table Striping</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Need Light Theme.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>none - no rows are shaded (default)</p>
+</li>
+<li>
+<p>even - even rows are shaded</p>
+</li>
+<li>
+<p>odd - odd rows are shaded</p>
+</li>
+<li>
+<p>all - all rows are shaded</p>
+</li>
+<li>
+<p>hover - the row under the mouse cursor is shaded (HTML only)</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B3</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stripes-odd stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HeaderCell1</th>
+<th class="tableblock halign-left valign-top">Header Cell 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row3Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row3Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_orientation"><a class="anchor" href="#_table_orientation"></a><a class="link" href="#_table_orientation">88. <a href="https://docs.asciidoctor.org/asciidoc/latest/tables/orientation/">Table Orientation</a></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>No effect.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 2</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HeaderCell1</th>
+<th class="tableblock halign-left valign-top">Header Cell 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_nesting"><a class="anchor" href="#_table_nesting"></a><a class="link" href="#_table_nesting">89. Table Nesting</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HeaderCell1</th>
+<th class="tableblock halign-left valign-top">Header Cell 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HeaderCell1</th>
+<th class="tableblock halign-left valign-top">Header Cell 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row1Cell2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell2</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Row2Cell1</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Row2Cell2</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_table_separator"><a class="anchor" href="#_table_separator"></a><a class="link" href="#_table_separator">90. Table Separator</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stripes-hover stretch right">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">HeaderCell1</th>
+<th class="tableblock halign-left valign-top">Header Cell 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hello</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asciidoc</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OneOne</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OneTwo</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">hello</th>
+<th class="tableblock halign-left valign-top">asciidoc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OneOne</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OneTwo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1 id="_equations_and_formulas_stem" class="sect0"><a class="anchor" href="#_equations_and_formulas_stem"></a><a class="link" href="#_equations_and_formulas_stem"><span class="icon"><i class="fa fa-circle fa-fw"></i></span> Equations and Formulas (STEM)</a></h1>
+<div class="sect1">
+<h2 id="_what_is_stem"><a class="anchor" href="#_what_is_stem"></a><a class="link" href="#_what_is_stem">91. What is STEM?</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Science, Technology, Engineering and Math expressions</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_starting"><a class="anchor" href="#_starting"></a><a class="link" href="#_starting">92. <a href="https://en.wikibooks.org/wiki/LaTeX">Starting</a></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>\$sqrt(4) = 2\$</p>
+</div>
+<div class="paragraph">
+<p>\$cos (2theta) = cos^2 theta - sin^2 theta\$</p>
+</div>
+</div>
+</div>
+<h1 id="_toc" class="sect0"><a class="anchor" href="#_toc"></a><a class="link" href="#_toc">TOC</a></h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="paragraph">
+<p>Kismet Lee; B. Steppenwolf; Pax Draeke<br>
+:toc:<br>
+:toc-title: Customize Title<br>
+:toclevels: 5</p>
+</div>
+<div class="paragraph">
+<p>Write preamble.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enable_toc"><a class="anchor" href="#_enable_toc"></a><a class="link" href="#_enable_toc">93. Enable TOC</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:toc:</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customize_toc_title"><a class="anchor" href="#_customize_toc_title"></a><a class="link" href="#_customize_toc_title">94. Customize TOC Title</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:toc-title: You's title</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customize_toc_depth"><a class="anchor" href="#_customize_toc_depth"></a><a class="link" href="#_customize_toc_depth">95. Customize TOC Depth</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By default, TOC display level 1(==) and level 2(===)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:toclevels: 1 (default value=2)</code></pre>
+</div>
+</div>
+<!-- toc disabled -->
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customize_toc_position"><a class="anchor" href="#_customize_toc_position"></a><a class="link" href="#_customize_toc_position">96. Customize TOC Position</a></h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:toc: left
+:toc: right
+:toc: preamble (need preamble)
+:toc: macro (need toc macro)
+:toc: auto (default)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_one"><a class="anchor" href="#_one"></a><a class="link" href="#_one">97. One</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_two"><a class="anchor" href="#_two"></a><a class="link" href="#_two">97.1. Two</a></h3>
+<div class="sect3">
+<h4 id="_three"><a class="anchor" href="#_three"></a><a class="link" href="#_three">97.1.1. Three</a></h4>
+<div class="sect4">
+<h5 id="_four"><a class="anchor" href="#_four"></a><a class="link" href="#_four">Four</a></h5>
+<div class="sect5">
+<h6 id="_five"><a class="anchor" href="#_five"></a><a class="link" href="#_five">Five</a></h6>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_docinfo_file" class="sect0"><a class="anchor" href="#_docinfo_file"></a><a class="link" href="#_docinfo_file"><a href="https://docs.asciidoctor.org/asciidoc/latest/docinfo/">Docinfo File</a></a></h1>
+<div class="openblock partintro">
+<div class="content">
+Docinfo is a feature of AsciiDoc that allows you to insert custom content into the <strong>head</strong>, <strong>header</strong>, or <strong>footer</strong> of the output document.
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enable_docinfo"><a class="anchor" href="#_enable_docinfo"></a><a class="link" href="#_enable_docinfo">98. Enable docinfo</a></h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">private</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>private-head</code> <code>private-header</code> <code>private-footer</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">private-head</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">private-header</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">private-footer</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">shared</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>shared-head</code> <code>shared-header</code> <code>shared-footer</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">shared-head</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">shared-header</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">shared-footer</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:docinfo: shared,private-footer</code></pre>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_substitutions" class="sect0"><a class="anchor" href="#_substitutions"></a><a class="link" href="#_substitutions">Substitutions</a></h1>
+<div class="sect1">
+<h2 id="_prevent_substitutions_2"><a class="anchor" href="#_prevent_substitutions_2"></a><a class="link" href="#_prevent_substitutions_2">99. Prevent Substitutions</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In /items/{id}, the id attribute isn&#8217;t replaced.<br>
+The curly braces around it are preserved.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stars</strong> isn&#8217;t displayed as bold text.<br>
+The asterisks around it are preserved.</p>
+</div>
+<div class="paragraph">
+<p>&amp;sect; appears as an entity reference.<br>
+It&#8217;s not converted into the section symbol (&sect;).</p>
+</div>
+<div class="paragraph">
+<p>=&gt; The backslash prevents the equals sign followed by a greater than sign from combining to form a double arrow character (&#8658;).</p>
+</div>
+<div class="paragraph">
+<p>[[Word]] is not interpreted as an anchor.<br>
+The double brackets around it are preserved.</p>
+</div>
+<div class="paragraph">
+<p>[[[Word]]] is not interpreted as a bibliography anchor.<br>
+The triple brackets around it are preserved.</p>
+</div>
+<div class="paragraph">
+<p>The URL https://example.org isn&#8217;t converted into an active link.</p>
+</div>
+<div class="paragraph">
+<p>The text __func__ will appear with two underscores in front of it and after it.<br>
+It won&#8217;t be italicized.</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. hello
+</div>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. The double hail-and-rainbow level makes my toes tingle.
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. Opinions are my <em>own</em>.
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. text
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. Opinions are my own.
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. Opinions are <em>mine</em>, and mine <strong>alone</strong>.
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Verbatim and Source Blocks :: Implicated</title>
+    <meta name="generator" content="Antora 3.1.2">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.demo.com">Implicated</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="asciidoc" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">AsciiDoc Reference</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">AsciiDoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../antora.html">Antora</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Reference</span>
+    <span class="version">Bate</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">AsciiDoc Reference</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">Bate</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">AsciiDoc Reference</a></li>
+    <li><a href="verbatim-and-source-blocks.html">Verbatim and Source Blocks</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/implicated/docs/edit/master/asciidoc/modules/ROOT/pages/chapter/verbatim-and-source-blocks.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Verbatim and Source Blocks</h1>
+<div class="sect1">
+<h2 id="_source"><a class="anchor" href="#_source"></a>Source</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_block_source"><a class="anchor" href="#_block_source"></a>Block Source</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;meta name="viewport"
+  content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is normal content.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_implied_block_source"><a class="anchor" href="#_implied_block_source"></a>Implied Block Source</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+"id": 1,
+"name": "hello"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_include_directive"><a class="anchor" href="#_include_directive"></a>Include Directive</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-py hljs" data-lang="py">line = '1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1'
+# print(list(map(int, line.split(','))))
+print(sum(map(int, line.split(','))))</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">$ asciidoctor -v</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_source_highlighting"><a class="anchor" href="#_source_highlighting"></a>Source Highlighting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_enable_global_highlight"><a class="anchor" href="#_enable_global_highlight"></a>Enable Global Highlight</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">:source-language: py</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_listing_block"><a class="anchor" href="#_listing_block"></a>Listing Block</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>User <code>[listing]</code></p>
+<div class="listingblock">
+<div class="content">
+<pre>This is an example of a paragraph assigned the `listing` style in an attribute list.
+Notice that the monospace marks are preserved in the output.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>User Indent</p>
+<div class="literalblock">
+<div class="content">
+<pre>This is an example of a paragraph assigned the `listing` style in an attribute list.
+Notice that the monospace marks are preserved in the output.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>User Delimited <code>----</code></p>
+<div class="listingblock">
+<div class="content">
+<pre>This is an example of a paragraph assigned the `listing` style in an attribute list.
+Notice that the monospace marks are preserved in the output.</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_literal_block"><a class="anchor" href="#_literal_block"></a>Literal Block</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>User <code>[literal]</code></p>
+<div class="literalblock">
+<div class="content">
+<pre>error: 1954 Forbidden search.
+absolutely fatal: operation lost in the dodecahedron of doom.
+Would you like to try again? y/n</pre>
+</div>
+</div>
+</li>
+<li>
+<p>User Indent</p>
+<div class="literalblock">
+<div class="content">
+<pre>error: 1954 Forbidden search
+absolutely fatal: operation lost in the dodecahedron of doom
+Would you like to try again? y/n</pre>
+</div>
+</div>
+</li>
+<li>
+<p>User Delimited <code>....</code></p>
+<div class="literalblock">
+<div class="content">
+<pre>error: 1954 Forbidden search
+absolutely fatal: operation lost in the dodecahedron of doom
+Would you like to try again? y/n</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_verbatim"><a class="anchor" href="#_verbatim"></a>Verbatim</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-ruby hljs" data-lang="ruby">require 'sinatra' <i class="conum" data-value="1"></i><b>(1)</b>
+
+get '/hi' do <i class="conum" data-value="2"></i><b>(2)</b> <i class="conum" data-value="3"></i><b>(3)</b>
+  "Hello World!"
+end</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Library import</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>URL mapping</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>Response block</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>List :: Implicated</title>
+    <meta name="generator" content="Antora 3.1.2">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.demo.com">Implicated</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="asciidoc" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">AsciiDoc Reference</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">AsciiDoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../antora.html">Antora</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Reference</span>
+    <span class="version">Bate</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">AsciiDoc Reference</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">Bate</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">AsciiDoc Reference</a></li>
+    <li><a href="list.html">List</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/implicated/docs/edit/master/asciidoc/modules/ROOT/pages/chapter/list.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">List</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_unordered_list">Unordered List</a></li>
+<li><a href="#_ordered_list">Ordered List</a>
+<ul class="sectlevel2">
+<li><a href="#_same_list">Same List</a></li>
+</ul>
+</li>
+<li><a href="#_check_list">Check List</a>
+<ul class="sectlevel2">
+<li><a href="#_interactive">Interactive</a></li>
+<li><a href="#_static">Static</a></li>
+</ul>
+</li>
+<li><a href="#_separate_list">Separate List</a>
+<ul class="sectlevel2">
+<li><a href="#_use_line_comment">Use line comment</a></li>
+<li><a href="#_use_block_attribute">Use block attribute</a></li>
+</ul>
+</li>
+<li><a href="#_complex_list">Complex List</a>
+<ul class="sectlevel2">
+<li><a href="#_long_text">Long Text</a></li>
+<li><a href="#_list_continuation">List Continuation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_unordered_list"><a class="anchor" href="#_unordered_list"></a>Unordered List</h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">list 1</div>
+<ul>
+<li>
+<p>one</p>
+<div class="ulist">
+<ul>
+<li>
+<p>one-two</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">list 2</div>
+<ul>
+<li>
+<p>one</p>
+<div class="ulist">
+<ul>
+<li>
+<p>one-two</p>
+<div class="ulist">
+<ul>
+<li>
+<p>one-two-three</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Level 1 list item</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Markers Show</div>
+<ul>
+<li>
+<p>world</p>
+<div class="ulist">
+<ul>
+<li>
+<p>markdown</p>
+<div class="ulist">
+<ul>
+<li>
+<p>svn</p>
+<div class="ulist">
+<ul>
+<li>
+<p>666</p>
+<div class="ulist">
+<ul>
+<li>
+<p>github</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>hello</p>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>asciidoc</p>
+<div class="ulist disc">
+<ul class="disc">
+<li>
+<p>git</p>
+<div class="ulist circle">
+<ul class="circle">
+<li>
+<p>888</p>
+<div class="ulist bullet">
+<ul class="bullet">
+<li>
+<p>gitlab</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ordered_list"><a class="anchor" href="#_ordered_list"></a>Ordered List</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<div class="title">This is list from 3 start</div>
+<ol class="arabic" start="3">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>one-two</p>
+</li>
+<li>
+<p>one-two</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>three</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Markers Show</div>
+<ol class="arabic" start="1]" reversed>
+<li>
+<p>world</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>markdown</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>svn</p>
+<div class="olist upperalpha">
+<ol class="upperalpha" type="A">
+<li>
+<p>666</p>
+<div class="olist upperroman">
+<ol class="upperroman" type="I">
+<li>
+<p>github</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>hello</p>
+<div class="olist none">
+<ol class="none">
+<li>
+<p>asciidoc</p>
+<div class="olist disc">
+<ol class="disc">
+<li>
+<p>git</p>
+<div class="olist circle">
+<ol class="circle">
+<li>
+<p>888</p>
+<div class="olist bullet">
+<ol class="bullet">
+<li>
+<p>gitlab</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_same_list"><a class="anchor" href="#_same_list"></a>Same List</h3>
+<div class="olist arabic">
+<div class="title">List1</div>
+<ol class="arabic">
+<li>
+<p>Linux</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fedora</p>
+</li>
+<li>
+<p>Ubuntu</p>
+</li>
+<li>
+<p>Slackware</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>BSD</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FreeBSD</p>
+</li>
+<li>
+<p>NetBSD</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<div class="title">Similar List1</div>
+<ol class="arabic">
+<li>
+<p>Linux</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fedora</p>
+</li>
+<li>
+<p>Ubuntu</p>
+</li>
+<li>
+<p>Slackware</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>BSD</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FreeBSD</p>
+</li>
+<li>
+<p>NetBSD</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_list"><a class="anchor" href="#_check_list"></a>Check List</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_interactive"><a class="anchor" href="#_interactive"></a>Interactive</h3>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><input type="checkbox" data-item-complete="1" checked> Read</p>
+</li>
+<li>
+<p><input type="checkbox" data-item-complete="0"> Write</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_static"><a class="anchor" href="#_static"></a>Static</h3>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-check-square-o"></i> Read</p>
+</li>
+<li>
+<p><i class="fa fa-square-o"></i> Write</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_separate_list"><a class="anchor" href="#_separate_list"></a>Separate List</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_use_line_comment"><a class="anchor" href="#_use_line_comment"></a>Use line comment</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>three</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_block_attribute"><a class="anchor" href="#_use_block_attribute"></a>Use block attribute</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>three</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_complex_list"><a class="anchor" href="#_complex_list"></a>Complex List</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_long_text"><a class="anchor" href="#_long_text"></a>Long Text</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The document header in AsciiDoc is optional.
+If present, it must start with a document title.</p>
+</li>
+<li>
+<p>Optional author and revision information lines immediately follow the document title.</p>
+</li>
+<li>
+<p>The document header must be separated from the remainder of the document by one or more empty lines, and it cannot contain empty lines.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_list_continuation"><a class="anchor" href="#_list_continuation"></a>List Continuation</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>hello asciidoc start</p>
+</li>
+<li>
+<p>this title</p>
+<div class="openblock">
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre>=== two level</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+add a note
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>hello asciidoc end</p>
+</li>
+<li>
+<p></p>
+<div class="listingblock">
+<div class="content">
+<pre>above is empty text list and align(need +)</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist .Ancestor list continuation">
+<ul class=".Ancestor list continuation">
+<li>
+<p>grandmother</p>
+<div class="ulist">
+<ul>
+<li>
+<p>mother</p>
+<div class="ulist">
+<ul>
+<li>
+<p>son</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>grandfather</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>father</p>
+<div class="ulist">
+<ul>
+<li>
+<p>daughter</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>new grandmother</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

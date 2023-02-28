@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Link :: Implicated</title>
+    <meta name="generator" content="Antora 3.1.2">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.demo.com">Implicated</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="asciidoc" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">AsciiDoc Reference</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">AsciiDoc</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../antora.html">Antora</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AsciiDoc Reference</span>
+    <span class="version">Bate</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">AsciiDoc Reference</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">Bate</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">AsciiDoc Reference</a></li>
+    <li><a href="link.html">Link</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/implicated/docs/edit/master/asciidoc/modules/ROOT/pages/chapter/link.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Link</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_hide_url_schema">Hide URL Schema</a></li>
+<li><a href="#_encode">Encode</a></li>
+<li><a href="#_autolink">Autolink</a>
+<ul class="sectlevel2">
+<li><a href="#_disable_autolink">Disable autolink</a></li>
+</ul>
+</li>
+<li><a href="#_link_macro">Link Macro</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Link not <code>.adoc</code> file. <code>.adoc</code> file user <a href="cross-reference.html" class="xref page"><strong>Cross Reference</strong></a></p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">link:file://resource/1.txt[name]</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Link hyperlinks.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">link:https://www.google.com[Google]
+
+link:ftp://www.google.com[Google]</code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hide_url_schema"><a class="anchor" href="#_hide_url_schema"></a>Hide URL Schema</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Set <code>hide-uri-scheme</code> attribute in the header of document.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.implicated.cc" class="bare">www.implicated.cc</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_encode"><a class="anchor" href="#_encode"></a>Encode</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">open dev tools in browser</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">encodeURI('http://example.org?q=label:"Requires docs"')</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_autolink"><a class="anchor" href="#_autolink"></a>Autolink</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://https.implicated.cc" class="bare">https.implicated.cc</a></p>
+</div>
+<div class="paragraph">
+<p><a href="http://http.implicated.cc" class="bare">http.implicated.cc</a></p>
+</div>
+<div class="paragraph">
+<p><a href="ftp://ftp.implicated.cc" class="bare">ftp.implicated.cc</a></p>
+</div>
+<div class="paragraph">
+<p>mailto:mail@implicated.cc</p>
+</div>
+<div class="sect2">
+<h3 id="_disable_autolink"><a class="anchor" href="#_disable_autolink"></a>Disable autolink</h3>
+<div class="paragraph">
+<p>Email us at <a href="mailto:hello@example.com">hello@example.com</a> to say hello.</p>
+</div>
+<div class="paragraph">
+<p>Email us at hello@example.com to say hello.</p>
+</div>
+<div class="paragraph">
+<p>Email us at hello@example.com to say hello.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_link_macro"><a class="anchor" href="#_link_macro"></a>Link Macro</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Type "https://asciidoctor.org" into the location bar of your browser.</p>
+</div>
+<div class="paragraph">
+<p>Type "<a href="https://asciidoctor.org" class="bare">asciidoctor.org</a>" into the location bar of your browser.</p>
+</div>
+<div class="paragraph">
+<p>Open "<a href="https://www.google.com"><strong><em>Google</em></strong></a>" search</p>
+</div>
+<div class="paragraph">
+<p>Open "<a href="https://www.google.com" class="teal"><strong><em>Google</em></strong></a>" search</p>
+</div>
+<div class="paragraph">
+<p><a href="../.crates/iMazing.png" target="_blank" rel="noopener">png</a></p>
+</div>
+<div class="paragraph">
+<p><a href="../.crates/iMazing.png">"This is png^"</a></p>
+</div>
+<div class="paragraph">
+<p><a href="../.crates/iMazing.png" class="btn" target="_blank" rel="noopener">This is png</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
