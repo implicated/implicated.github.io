@@ -11,7 +11,8 @@ content:
       branches: 'master'
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: ui-bundle.zip
+#    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     #    url: https://github.com/aerogear/antora-ui/raw/master/build/ui-bundle.zip
     snapshot: true
   supplemental_files:

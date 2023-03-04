@@ -10,5 +10,5 @@ content:
       branches: HEAD
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://github.com/implicated/implicated.github.io/blob/master/ui-bundle.zip
     snapshot: true
